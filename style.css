@@ -1,0 +1,81 @@
+* {
+    font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body {
+    margin: 0;
+}
+
+ul {
+    display: flex;
+    list-style: none;
+    gap: 10px;
+}
+
+.header {
+    padding: 10px 12.5%;
+    background-color: #1f2937;
+}
+
+.head-container {
+    display: flex;
+    align-items: stretch;
+    gap: 20px;
+}
+
+.web-info, #image {
+    flex: 1;
+    max-width: 50%;
+    object-fit: cover;
+}
+
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    font-size: 24px;
+    color: #f9faf8;
+}
+
+a {
+    text-decoration: none;
+    color: #e5e7eb;
+}
+
+.title {
+    font-size: 48px;
+    color: #f9faf8;
+    font-weight: 900;
+}
+
+.secondary-text {
+    font-size: 18px;
+    color: #e5e7eb;
+}
+
+.signup {
+    background-color: #3882f6;
+    padding: 5px 30px;
+    border: 0;
+    border-radius: 3px;
+    color: #f9faf8;
+    font-weight: 900;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card-container {
+    display: flex;
+}
+
+.card > img {
+    height: 100px;
+}

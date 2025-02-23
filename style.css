@@ -71,7 +71,10 @@ a {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 50px 10%;
+    padding-right: 20%;
+    padding-left: 20%;
+    padding-top: 5%;
+    padding-bottom: 5%;
     gap: 50px;
 }
 
@@ -84,18 +87,20 @@ a {
 .card-container {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
 }
 .card {
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
+    width: 150px;
 }
 
 .card > img {
-    flex: 1;
-    width: 150px;
-    height: 150px;
+    flex: 0;
+    width: 100%;
     border-width: 10px;
     border-radius: 10px;
     border-color: #3882f6;
@@ -103,14 +108,67 @@ a {
 
 .card > p {
     flex: 0;
-    font-size: 18px;
+    font-size: 16px;
     color: #1f2937;
 }
 
 .quote-container {
     display: flex;
     flex-direction: column;
+    padding: 50px 30%;
+    background-color: #e5e7eb;
+}
+
+.quote {
+    size: 36px;
+    font-style: italic;
+    color: #1f2937;
+}
+
+.speaker {
+    text-align: end;
+    size: 36px;
+    font-weight: 900;
+    color: #1f2937;
+}
+
+.login-container {
+    padding: 50px 15%;
+}
+
+.login {
+    display: flex;
+    background-color: #3882f6 ;
+    justify-content: space-around;
+    border-radius: 5px;
+    align-items: center;
+    padding: 5% 10%;
+    color: #e5e7eb;
+    gap: 10px;
+}
+
+h3 {
+    margin: 0;
+    flex: 1;
+    margin-bottom: 10px;
+}
+
+.login > button {
+    border-color: #e5e7eb;
+    padding: 5px 20px;
+    background-color: #3882f6;
+    border-radius: 5px;
+    border-color: #e5e7eb;
+    border-width: 3px;
+    border-style: solid;
+    color: #e5e7eb;
+}
+
+.footer {
+    background-color: #1f2937;
+    display: flex;
     justify-content: center;
     align-items: center;
-    width: 63%;
+    padding: 15px;
+    color: #e5e7eb ;
 }

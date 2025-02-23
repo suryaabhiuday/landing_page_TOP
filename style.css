@@ -20,12 +20,13 @@ ul {
 .head-container {
     display: flex;
     align-items: stretch;
+    flex-wrap: wrap;
     gap: 20px;
 }
 
 .web-info, #image {
     flex: 1;
-    max-width: 50%;
+    width: 50%;
     object-fit: cover;
 }
 
@@ -70,12 +71,46 @@ a {
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 50px 10%;
+    gap: 50px;
+}
+
+.info-text {
+    color: #1f2937;
+    font-size: 36px;
+    font-weight: 900;
 }
 
 .card-container {
     display: flex;
+    justify-content: space-between;
+}
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
 }
 
 .card > img {
-    height: 100px;
+    flex: 1;
+    width: 150px;
+    height: 150px;
+    border-width: 10px;
+    border-radius: 10px;
+    border-color: #3882f6;
+}
+
+.card > p {
+    flex: 0;
+    font-size: 18px;
+    color: #1f2937;
+}
+
+.quote-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 63%;
 }
